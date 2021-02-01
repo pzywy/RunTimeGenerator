@@ -92,7 +92,7 @@ body {
   text-align: center;
 }
 
-.dane .moreData .czasTrwania::after {
+.dane .moreData .time::after {
   display: block;
   font-size: .8em;
   content: "Workout Time";
@@ -110,7 +110,7 @@ body {
   content: "Kcal";
 }
 
-.udostepnij {
+.share {
   font-family: 'Potta One', cursive;
   width: 50%;
   margin: .5em;
