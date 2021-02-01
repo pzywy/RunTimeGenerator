@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunTime</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+</head>
+<body>
+    
+<div class="panel">
+    <label for="input-date">Data</label>
+    <input type="text" id='input-date' value='12.01'>
+    <br>
+    <label for="input-km">Kilometry</label>
+    <input type="text" id='input-km' value='5km'>
+    <br>
+    <label for="input-time">Czas</label>
+    <input type="text" id='input-time' value='01:00:01'>
+    <br>
+    <label for="input-steps">Kroki</label>
+    <input type="text" id='input-steps' value='531'>
+    <br>
+    <label for="input-kcal">Kalorie</label>
+    <input type="text" id='input-kcal' value='420'>
+    <br>
+    <label for="input-count">ilosc kresek czasowych (co 5 min - 12 na godzine)</label>
+    <input type="text" id='input-count' value='12'>
+
+    <br>
+    <button class='generate-button' onclick="fillData()">Generate</button>
+</div>
+
+    <div class="content">
+        <img src="logo.png" alt="" class="logo">
+        <div class="data">
+            <div class="map"><canvas id="map"></canvas></div>
+            
+            <div class="dane">
+                <div class="date">23.01 - 12:44</div>
+                <div class="km">4,66 km</div>
+                <div class="moreData">
+                    <div class="czasTrwania">01:23:04</div>
+                    <div class="kroki">9444</div>
+                    <div class="kcal">453</div>
+                </div>
+            </div>
+            <button class="show">Show on map</button>
+            <br>
+            <button class="udostepnij">Share</button>
+        </div>
+    </div>
+
+    <script src="index.js?v=1"></script>
+</body>
+</html>

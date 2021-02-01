@@ -1,0 +1,184 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  font-family: 'Potta One', cursive;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.data {
+  text-align: center;
+}
+
+.content {
+  margin-top: 40em;
+  width: 450px;
+  height: 880px;
+  border: black solid 0px;
+  background-color: #3e7cb1;
+  margin: auto;
+  margin-bottom: 10em;
+}
+
+.logo {
+  margin-top: 1.5em;
+  height: 100px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+#map {
+  border: #000000 solid 0px;
+  width: 70%;
+  height: 10em;
+  margin: 0 auto;
+  margin-top: .5em;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+.dane {
+  margin-top: .5em;
+  color: #dbe4ee;
+}
+
+.dane .date {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.dane .km {
+  margin: .8em 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.dane .moreData {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dane .moreData * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.dane .moreData .czasTrwania::after {
+  display: block;
+  font-size: .8em;
+  content: "Workout Time";
+}
+
+.dane .moreData .kroki::after {
+  display: block;
+  font-size: .8em;
+  content: "Steps";
+}
+
+.dane .moreData .kcal::after {
+  display: block;
+  font-size: .8em;
+  content: "Kcal";
+}
+
+.udostepnij {
+  font-family: 'Potta One', cursive;
+  width: 50%;
+  margin: .5em;
+  height: 2em;
+  border-radius: 2em;
+  font-size: 1.5em;
+}
+
+.show {
+  font-family: 'Potta One', cursive;
+  width: 70%;
+  margin: .8em auto;
+  height: 2em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  margin-top: 12vh;
+}
+
+button {
+  background-color: #fa9607;
+  color: black;
+  border: none;
+  width: 100%;
+}
+
+.phone {
+  width: 100%;
+  height: 1.5em;
+  background-color: black;
+}
+
+.ad {
+  width: 100%;
+  height: 3.5em;
+  background-color: black;
+  margin-bottom: 0;
+}
+
+.exit {
+  position: relative;
+  left: 37.8%;
+  top: 3.2em;
+}
+
+.generate-button {
+  width: 50%;
+  border-radius: 4em;
+}
+
+.panel {
+  position: relative;
+  margin: auto;
+  border: black dotted 2px;
+  width: 90%;
+  height: 40vh;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40vh;
+  margin-top: 3em;
+}
+
+@media (max-width: 700px) {
+  .content {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */
